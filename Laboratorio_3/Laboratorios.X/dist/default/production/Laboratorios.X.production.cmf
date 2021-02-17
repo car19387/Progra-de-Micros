@@ -1,0 +1,357 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/Lab1.o
+resVect CODE 0 0 0 3 2
+code - 0 0 0 118 2
+udata_bank0 - 0 0 0 2 1
+config CONFIG 4 2007 2007 2 2
+$build/default/production/Lab2.o
+resVect CODE 0 0 0 3 2
+code - 0 118 118 13E 2
+config CONFIG 4 2007 2007 2 2
+$build/default/production/Lab3.o
+resVect CODE 0 0 0 3 2
+code CODE 0 0 0 162 2
+udata_shr COMMON 1 70 70 1 1
+config CONFIG 4 2007 2007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 20-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 20-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 4AC-1FFF 1
+ENTRY 4AC-1FFF 1
+IDLOC 2000-2003 2
+CODE 4AC-1FFF 1
+COMMON 71-7F 1
+STRCODE 4AC-1FFF 1
+STRING 4AC-1FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/Lab1.o
+0 code ABS >42:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+100 code ABS >44:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+100 code ABS >45:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+101 code ABS >46:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+102 code ABS >47:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+103 code ABS >48:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+104 code ABS >50:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+105 code ABS >51:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+106 code ABS >52:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+107 code ABS >54:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+108 code ABS >55:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+109 code ABS >58:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+109 code ABS >59:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+10A code ABS >60:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+10B code ABS >61:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+10C code ABS >64:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+10C code ABS >65:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+10D code ABS >66:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+10E code ABS >67:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+10F code ABS >68:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+110 code ABS >69:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+111 code ABS >70:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+112 code ABS >72:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+112 code ABS >73:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+113 code ABS >74:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+114 code ABS >75:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+115 code ABS >76:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+116 code ABS >77:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+117 code ABS >79:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+0 resVect CODE >35:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+0 resVect CODE >36:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+0 resVect CODE >37:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+2 resVect CODE >38:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+0 udata_bank0 ABS >29:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+1 udata_bank0 ABS >30:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab1.s
+$build/default/production/Lab2.o
+230 code ABS >37:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+330 code ABS >39:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+330 code ABS >40:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+331 code ABS >41:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+332 code ABS >46:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+333 code ABS >47:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+334 code ABS >49:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+335 code ABS >50:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+336 code ABS >55:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+337 code ABS >56:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+338 code ABS >57:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+339 code ABS >58:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+33A code ABS >59:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+33B code ABS >61:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+33C code ABS >62:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+33D code ABS >66:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+33E code ABS >67:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+33F code ABS >68:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+340 code ABS >69:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+341 code ABS >72:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+341 code ABS >73:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+342 code ABS >74:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+343 code ABS >76:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+344 code ABS >77:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+345 code ABS >79:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+346 code ABS >80:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+347 code ABS >82:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+348 code ABS >83:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+349 code ABS >85:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+34A code ABS >86:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+34B code ABS >87:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+34C code ABS >90:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+34C code ABS >91:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+34D code ABS >92:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+34E code ABS >93:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+34F code ABS >94:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+350 code ABS >95:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+351 code ABS >96:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+352 code ABS >97:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+353 code ABS >99:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+353 code ABS >100:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+354 code ABS >101:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+355 code ABS >102:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+356 code ABS >103:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+357 code ABS >104:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+358 code ABS >105:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+359 code ABS >106:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+35A code ABS >108:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+35A code ABS >109:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+35B code ABS >110:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+35C code ABS >111:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+35D code ABS >112:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+35E code ABS >113:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+35F code ABS >114:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+360 code ABS >115:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+361 code ABS >117:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+361 code ABS >118:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+362 code ABS >119:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+363 code ABS >120:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+364 code ABS >121:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+365 code ABS >122:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+366 code ABS >123:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+367 code ABS >124:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+368 code ABS >126:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+368 code ABS >127:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+369 code ABS >128:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+36A code ABS >129:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+36B code ABS >130:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+36C code ABS >131:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+36D code ABS >132:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+0 resVect CODE >30:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+0 resVect CODE >31:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+0 resVect CODE >32:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+2 resVect CODE >33:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab2.s
+$build/default/production/Lab3.o
+0 resVect CODE >53:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+0 resVect CODE >54:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+0 resVect CODE >55:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+2 resVect CODE >56:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+0 code CODE >62:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+100 code CODE >63:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+100 code CODE >64:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+101 code CODE >65:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+102 code CODE >66:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+103 code CODE >67:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+104 code CODE >68:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+105 code CODE >69:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+106 code CODE >70:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+107 code CODE >71:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+108 code CODE >72:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+109 code CODE >73:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+10A code CODE >74:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+10B code CODE >75:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+10C code CODE >76:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+10D code CODE >77:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+10E code CODE >78:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+10F code CODE >79:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+110 code CODE >80:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+111 code CODE >81:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+112 code CODE >82:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+113 code CODE >83:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+114 code CODE >88:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+114 code CODE >89:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+115 code CODE >90:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+116 code CODE >91:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+117 code CODE >96:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+117 code CODE >97:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+118 code CODE >98:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+119 code CODE >99:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+11A code CODE >100:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+11B code CODE >101:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+11C code CODE >102:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+11D code CODE >103:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+11E code CODE >104:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+11F code CODE >106:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+120 code CODE >107:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+121 code CODE >108:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+122 code CODE >109:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+123 code CODE >115:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+123 code CODE >116:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+125 code CODE >117:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+126 code CODE >118:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+127 code CODE >120:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+129 code CODE >121:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+12A code CODE >122:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+12B code CODE >123:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+12C code CODE >124:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+12D code CODE >126:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+12F code CODE >127:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+130 code CODE >128:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+131 code CODE >129:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+132 code CODE >130:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+133 code CODE >131:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+134 code CODE >133:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+134 code CODE >134:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+136 code CODE >135:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+137 code CODE >136:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+138 code CODE >137:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+139 code CODE >138:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+13A code CODE >139:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+13B code CODE >140:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+13D code CODE >141:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+13E code CODE >142:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+13F code CODE >144:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+13F code CODE >145:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+140 code CODE >146:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+141 code CODE >147:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+142 code CODE >148:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+143 code CODE >150:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+143 code CODE >151:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+145 code CODE >152:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+146 code CODE >153:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+147 code CODE >154:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+148 code CODE >155:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+149 code CODE >156:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+14A code CODE >158:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+14A code CODE >159:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+14B code CODE >160:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+14C code CODE >161:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+14D code CODE >162:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+14E code CODE >163:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+14F code CODE >164:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+150 code CODE >166:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+151 code CODE >168:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+151 code CODE >169:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+152 code CODE >170:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+153 code CODE >171:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+154 code CODE >172:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+155 code CODE >173:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+156 code CODE >174:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+157 code CODE >176:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+158 code CODE >178:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+158 code CODE >179:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+159 code CODE >180:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+15A code CODE >181:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+15B code CODE >182:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+15C code CODE >183:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+15D code CODE >184:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+15E code CODE >185:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+15F code CODE >186:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+160 code CODE >187:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+161 code CODE >188:C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios.X\Lab3.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 256 0 ABS 0 - -
+__Hspace_1 71 0 ABS 0 - -
+__Hspace_3 1 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Hudata_bank0 2 0 ABS 0 udata_bank0 -
+__Hudata_bank1 2 0 ABS 0 udata_bank1 -
+__Hudata_bank2 2 0 ABS 0 udata_bank2 -
+__Hudata_bank3 2 0 ABS 0 udata_bank3 -
+__LresVect 0 0 ABS 0 resVect -
+__Hedata 2 0 EEDATA 3 edata -
+__Hudata 2 0 ABS 0 udata -
+__Hconfig 4012 0 CONFIG 4 config -
+__Ledata 2 0 EEDATA 3 edata -
+__Ludata 2 0 ABS 0 udata -
+__Hcode 4AC 0 ABS 0 code -
+__Hdata 2 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 2 0 ABS 0 data -
+__S0 0 0 ABS 0 - -
+__S1 71 0 ABS 0 - -
+__HresVect 0 0 ABS 0 resVect -
+__Lconfig 0 0 CONFIG 4 config -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 2 0 ABS 0 udata_bank1 -
+__Ludata_bank2 2 0 ABS 0 udata_bank2 -
+__Ludata_bank3 2 0 ABS 0 udata_bank3 -
+__Hudata_shr 2 0 ABS 0 udata_shr -
+__Ludata_shr 2 0 ABS 0 udata_shr -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+udata_shr 1 70 70 1 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
