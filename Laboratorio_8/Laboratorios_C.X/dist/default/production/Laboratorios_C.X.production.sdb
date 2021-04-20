@@ -1,0 +1,261 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F887 ]
+[d frameptr 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"77 C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios_C.X\Lab8.c
+[v _main main `(v  1 e 1 0 ]
+"102
+[v _isr isr `II(v  1 e 1 0 ]
+"137
+[v _setup setup `(v  1 e 1 0 ]
+"146
+[v _config_io config_io `(v  1 e 1 0 ]
+"163
+[v _config_reloj config_reloj `(v  1 e 1 0 ]
+"171
+[v _config_adc config_adc `(v  1 e 1 0 ]
+"183
+[v _config_int_enable config_int_enable `(v  1 e 1 0 ]
+"193
+[v _config_timer0 config_timer0 `(v  1 e 1 0 ]
+"207
+[v _display7seg display7seg `(v  1 e 1 0 ]
+"59 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+"166
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"228
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+[s S116 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"245
+[u S125 . 1 `S116 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES125  1 e 1 @6 ]
+"290
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"352
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S82 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"482
+[s S91 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+[u S96 . 1 `S82 1 . 1 0 `S91 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES96  1 e 1 @11 ]
+[s S138 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"553
+[u S146 . 1 `S138 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES146  1 e 1 @12 ]
+"1238
+[v _ADRESH ADRESH `VEuc  1 e 1 @30 ]
+[s S26 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+`uc 1 ADCS 1 0 :2:6 
+]
+"1276
+[s S31 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 ADCS0 1 0 :1:6 
+`uc 1 ADCS1 1 0 :1:7 
+]
+[s S40 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S43 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[u S46 . 1 `S26 1 . 1 0 `S31 1 . 1 0 `S40 1 . 1 0 `S43 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES46  1 e 1 @31 ]
+[s S247 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+"1366
+[s S254 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+]
+[u S258 . 1 `S247 1 . 1 0 `S254 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES258  1 e 1 @129 ]
+"1416
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1478
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1540
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1602
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1664
+[v _TRISE TRISE `VEuc  1 e 1 @137 ]
+[s S228 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+]
+"1718
+[u S236 . 1 `S228 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES236  1 e 1 @140 ]
+[s S187 . 1 `uc 1 SCS 1 0 :1:0 
+`uc 1 LTS 1 0 :1:1 
+`uc 1 HTS 1 0 :1:2 
+`uc 1 OSTS 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+]
+"1882
+[s S193 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S198 . 1 `S187 1 . 1 0 `S193 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES198  1 e 1 @143 ]
+[s S213 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 VCFG0 1 0 :1:4 
+`uc 1 VCFG1 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+"2991
+[u S219 . 1 `S213 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES219  1 e 1 @159 ]
+"3387
+[v _ANSEL ANSEL `VEuc  1 e 1 @392 ]
+"3449
+[v _ANSELH ANSELH `VEuc  1 e 1 @393 ]
+"52 C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios_C.X\Lab8.c
+[v _tab7seg tab7seg `[10]uc  1 e 10 0 ]
+"53
+[v _var_temp var_temp `uc  1 e 1 0 ]
+"54
+[v _unidades unidades `uc  1 e 1 0 ]
+"55
+[v _decenas decenas `uc  1 e 1 0 ]
+"56
+[v _decenas_res decenas_res `uc  1 e 1 0 ]
+"57
+[v _centenas centenas `uc  1 e 1 0 ]
+"58
+[v _unidad_display unidad_display `uc  1 e 1 0 ]
+"59
+[v _decena_display decena_display `uc  1 e 1 0 ]
+"60
+[v _centena_display centena_display `uc  1 e 1 0 ]
+"61
+[v _cont cont `uc  1 e 1 0 ]
+"77
+[v _main main `(v  1 e 1 0 ]
+{
+"97
+} 0
+"137
+[v _setup setup `(v  1 e 1 0 ]
+{
+"144
+} 0
+"193
+[v _config_timer0 config_timer0 `(v  1 e 1 0 ]
+{
+"202
+} 0
+"163
+[v _config_reloj config_reloj `(v  1 e 1 0 ]
+{
+"169
+} 0
+"146
+[v _config_io config_io `(v  1 e 1 0 ]
+{
+"161
+} 0
+"183
+[v _config_int_enable config_int_enable `(v  1 e 1 0 ]
+{
+"191
+} 0
+"171
+[v _config_adc config_adc `(v  1 e 1 0 ]
+{
+"181
+} 0
+"207
+[v _display7seg display7seg `(v  1 e 1 0 ]
+{
+"217
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 1 ]
+[v ___awmod@counter counter `uc  1 a 1 0 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 3 ]
+[v ___awmod@dividend dividend `i  1 p 2 5 ]
+"34
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 2 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 1 ]
+[v ___awdiv@counter counter `uc  1 a 1 0 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 3 ]
+[v ___awdiv@dividend dividend `i  1 p 2 5 ]
+"41
+} 0
+"102 C:\Users\jefca\Downloads\Nueva carpeta\UVG 5 Semestre\Progra de Micros\Laboratorio\Laboratorios_C.X\Lab8.c
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"132
+} 0
