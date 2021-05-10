@@ -93,7 +93,7 @@ void main(void) {
     // Loop principal
     //**************************************************************************
     while(1){
-        //__delay_ms(500);
+
         if (PIR1bits.TXIF) {                // Interrupción TXREG empty
             
             if (caso == 1 ){                // Si la bandera del menú se levanta
@@ -116,9 +116,10 @@ void main(void) {
 //******************************************************************************
 void __interrupt() isr(void) {
     if (PIR1bits.RCIF) {                    // Interrupción RCREG full
-        TXREG = 12;                         // Limpiar consola
+        
         
         if (RCREG == 49){                   // Si presiona 1
+            TXREG = 12;                     // Limpiar consola
             while(punt1 > 0){               // Ciclo para cadena de texto
                 punt1 = punt1-1;            // Cambio de letra
                 TXREG = cadena[punt1];      // Escritura de texto
@@ -130,18 +131,20 @@ void __interrupt() isr(void) {
         }
         
         if (RCREG == 50){                   // Si presiona 2
+            TXREG = 12;                     // Limpiar consola
             while(punt2 > 0){               // Ciclo para menú de PORTA
                 punt2 = punt2-1;            // Cambio de letra
                 TXREG = puertoA[punt2];     // Escritura de texto
                 __delay_ms(1);              // Delay para transmisión
             }
             TXREG = 0x0D;                   // Salto de linea
+            RCREG = 0x01;                   // Se escribe 0x01 en RCREG    
             while(RCREG != 0){              // Ciclo para menú de PORTB
-                if(RCREG != 50){            // Si RCREG no es 2
-                TXREG = RCREG;              // Copiar RCREG a consola
-                PORTA = RCREG;              // Copiar RCreG a PORTA
-                __delay_ms(1500);           // Delay para transmisión
-                RCREG = 0;                  // Poner RCREG en 0 para salir
+                if(RCREG != 1){             // Si RCREG no es 0x01
+                    TXREG = RCREG;          // Copiar RCREG a consola
+                    PORTA = RCREG;          // Copiar RCREG a PORTA
+                    __delay_ms(1500);       // Delay para transmisión
+                    RCREG = 0;              // Poner RCREG en 0 para salir
                 }       
             }
             caso = 1;                       // Levantar bandera de menú princ
@@ -149,14 +152,16 @@ void __interrupt() isr(void) {
         }
         
         if (RCREG == 51){                   // Si presiona 3
+            TXREG = 12;                     // Limpiar consola
             while(punt3 > 0){               // Ciclo para menú de PORTB
                 punt3 = punt3-1;            // Cambio de letra
                 TXREG = puertoB[punt3];     // Escritura de texto
                 __delay_ms(1);              // Delay para transmisión
                 }
             TXREG = 0x0D;                   // Salto de linea
+            RCREG = 0x01;                   // Se escribe 0x01 en RCREG
             while(RCREG != 0){              // Ciclo para menú de PORTB
-                if(RCREG != 51){            // Si RCREG no es 3
+                if(RCREG != 1){             // Si RCREG no es 0x01
                     TXREG = RCREG;          // Copiar RCREG a consola
                     PORTB = RCREG;          // Copiar RCREG a PORTB
                     __delay_ms(1500);       // Delay para transmisión
@@ -211,7 +216,6 @@ void config_serial() {
     RCSTAbits.SPEN = 1;     // Se habilita TX y RX
     RCSTAbits.RX9 = 0;      // 8 bits de recepción
     RCSTAbits.CREN = 1;     // Se habilita recibimiento continuo
-    
     TXSTAbits.TXEN = 1;     // Se habilita la transimisión
 }
 

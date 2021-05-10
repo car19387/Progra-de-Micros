@@ -747,334 +747,346 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;Lab10.c: 118:     if (PIR1bits.RCIF) {
 [e $ ! != -> . . _PIR1bits 0 5 `i -> 0 `i 148  ]
 {
-"119
-[; ;Lab10.c: 119:         TXREG = 12;
-[e = _TXREG -> -> 12 `i `uc ]
 "121
 [; ;Lab10.c: 121:         if (RCREG == 49){
 [e $ ! == -> _RCREG `i -> 49 `i 149  ]
 {
 "122
-[; ;Lab10.c: 122:             while(punt1 > 0){
+[; ;Lab10.c: 122:             TXREG = 12;
+[e = _TXREG -> -> 12 `i `uc ]
+"123
+[; ;Lab10.c: 123:             while(punt1 > 0){
 [e $U 150  ]
 [e :U 151 ]
 {
-"123
-[; ;Lab10.c: 123:                 punt1 = punt1-1;
-[e = _punt1 -> - -> _punt1 `i -> 1 `i `uc ]
 "124
-[; ;Lab10.c: 124:                 TXREG = cadena[punt1];
-[e = _TXREG -> *U + &U _cadena * -> _punt1 `ux -> -> # *U &U _cadena `ui `ux `uc ]
+[; ;Lab10.c: 124:                 punt1 = punt1-1;
+[e = _punt1 -> - -> _punt1 `i -> 1 `i `uc ]
 "125
-[; ;Lab10.c: 125:                 _delay((unsigned long)((1)*(1000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 1000000 `l `d .4000.0 `ul ]
+[; ;Lab10.c: 125:                 TXREG = cadena[punt1];
+[e = _TXREG -> *U + &U _cadena * -> _punt1 `ux -> -> # *U &U _cadena `ui `ux `uc ]
 "126
-[; ;Lab10.c: 126:             }
+[; ;Lab10.c: 126:                 _delay((unsigned long)((1)*(1000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 1000000 `l `d .4000.0 `ul ]
+"127
+[; ;Lab10.c: 127:             }
 }
 [e :U 150 ]
-"122
-[; ;Lab10.c: 122:             while(punt1 > 0){
+"123
+[; ;Lab10.c: 123:             while(punt1 > 0){
 [e $ > -> _punt1 `i -> 0 `i 151  ]
 [e :U 152 ]
-"127
-[; ;Lab10.c: 127:             _delay((unsigned long)((3000)*(1000000/4000.0)));
-[e ( __delay (1 -> * -> -> 3000 `i `d / -> -> 1000000 `l `d .4000.0 `ul ]
 "128
-[; ;Lab10.c: 128:             caso = 1;
-[e = _caso -> -> 1 `i `uc ]
+[; ;Lab10.c: 128:             _delay((unsigned long)((3000)*(1000000/4000.0)));
+[e ( __delay (1 -> * -> -> 3000 `i `d / -> -> 1000000 `l `d .4000.0 `ul ]
 "129
-[; ;Lab10.c: 129:             punt1 = 30;
-[e = _punt1 -> -> 30 `i `uc ]
+[; ;Lab10.c: 129:             caso = 1;
+[e = _caso -> -> 1 `i `uc ]
 "130
-[; ;Lab10.c: 130:         }
+[; ;Lab10.c: 130:             punt1 = 30;
+[e = _punt1 -> -> 30 `i `uc ]
+"131
+[; ;Lab10.c: 131:         }
 }
 [e :U 149 ]
-"132
-[; ;Lab10.c: 132:         if (RCREG == 50){
+"133
+[; ;Lab10.c: 133:         if (RCREG == 50){
 [e $ ! == -> _RCREG `i -> 50 `i 153  ]
 {
-"133
-[; ;Lab10.c: 133:             while(punt2 > 0){
+"134
+[; ;Lab10.c: 134:             TXREG = 12;
+[e = _TXREG -> -> 12 `i `uc ]
+"135
+[; ;Lab10.c: 135:             while(punt2 > 0){
 [e $U 154  ]
 [e :U 155 ]
 {
-"134
-[; ;Lab10.c: 134:                 punt2 = punt2-1;
-[e = _punt2 -> - -> _punt2 `i -> 1 `i `uc ]
-"135
-[; ;Lab10.c: 135:                 TXREG = puertoA[punt2];
-[e = _TXREG -> *U + &U _puertoA * -> _punt2 `ux -> -> # *U &U _puertoA `ui `ux `uc ]
 "136
-[; ;Lab10.c: 136:                 _delay((unsigned long)((1)*(1000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 1000000 `l `d .4000.0 `ul ]
+[; ;Lab10.c: 136:                 punt2 = punt2-1;
+[e = _punt2 -> - -> _punt2 `i -> 1 `i `uc ]
 "137
-[; ;Lab10.c: 137:             }
+[; ;Lab10.c: 137:                 TXREG = puertoA[punt2];
+[e = _TXREG -> *U + &U _puertoA * -> _punt2 `ux -> -> # *U &U _puertoA `ui `ux `uc ]
+"138
+[; ;Lab10.c: 138:                 _delay((unsigned long)((1)*(1000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 1000000 `l `d .4000.0 `ul ]
+"139
+[; ;Lab10.c: 139:             }
 }
 [e :U 154 ]
-"133
-[; ;Lab10.c: 133:             while(punt2 > 0){
+"135
+[; ;Lab10.c: 135:             while(punt2 > 0){
 [e $ > -> _punt2 `i -> 0 `i 155  ]
 [e :U 156 ]
-"138
-[; ;Lab10.c: 138:             TXREG = 0x0D;
+"140
+[; ;Lab10.c: 140:             TXREG = 0x0D;
 [e = _TXREG -> -> 13 `i `uc ]
-"139
-[; ;Lab10.c: 139:             while(RCREG != 0){
+"141
+[; ;Lab10.c: 141:             RCREG = 0x01;
+[e = _RCREG -> -> 1 `i `uc ]
+"142
+[; ;Lab10.c: 142:             while(RCREG != 0){
 [e $U 157  ]
 [e :U 158 ]
 {
-"140
-[; ;Lab10.c: 140:                 if(RCREG != 50){
-[e $ ! != -> _RCREG `i -> 50 `i 160  ]
-{
-"141
-[; ;Lab10.c: 141:                 TXREG = RCREG;
-[e = _TXREG _RCREG ]
-"142
-[; ;Lab10.c: 142:                 PORTA = RCREG;
-[e = _PORTA _RCREG ]
 "143
-[; ;Lab10.c: 143:                 _delay((unsigned long)((1500)*(1000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1500 `i `d / -> -> 1000000 `l `d .4000.0 `ul ]
+[; ;Lab10.c: 143:                 if(RCREG != 1){
+[e $ ! != -> _RCREG `i -> 1 `i 160  ]
+{
 "144
-[; ;Lab10.c: 144:                 RCREG = 0;
-[e = _RCREG -> -> 0 `i `uc ]
+[; ;Lab10.c: 144:                     TXREG = RCREG;
+[e = _TXREG _RCREG ]
 "145
-[; ;Lab10.c: 145:                 }
+[; ;Lab10.c: 145:                     PORTA = RCREG;
+[e = _PORTA _RCREG ]
+"146
+[; ;Lab10.c: 146:                     _delay((unsigned long)((1500)*(1000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1500 `i `d / -> -> 1000000 `l `d .4000.0 `ul ]
+"147
+[; ;Lab10.c: 147:                     RCREG = 0;
+[e = _RCREG -> -> 0 `i `uc ]
+"148
+[; ;Lab10.c: 148:                 }
 }
 [e :U 160 ]
-"146
-[; ;Lab10.c: 146:             }
+"149
+[; ;Lab10.c: 149:             }
 }
 [e :U 157 ]
-"139
-[; ;Lab10.c: 139:             while(RCREG != 0){
+"142
+[; ;Lab10.c: 142:             while(RCREG != 0){
 [e $ != -> _RCREG `i -> 0 `i 158  ]
 [e :U 159 ]
-"147
-[; ;Lab10.c: 147:             caso = 1;
+"150
+[; ;Lab10.c: 150:             caso = 1;
 [e = _caso -> -> 1 `i `uc ]
-"148
-[; ;Lab10.c: 148:             punt2 = 32;
+"151
+[; ;Lab10.c: 151:             punt2 = 32;
 [e = _punt2 -> -> 32 `i `uc ]
-"149
-[; ;Lab10.c: 149:         }
+"152
+[; ;Lab10.c: 152:         }
 }
 [e :U 153 ]
-"151
-[; ;Lab10.c: 151:         if (RCREG == 51){
+"154
+[; ;Lab10.c: 154:         if (RCREG == 51){
 [e $ ! == -> _RCREG `i -> 51 `i 161  ]
 {
-"152
-[; ;Lab10.c: 152:             while(punt3 > 0){
+"155
+[; ;Lab10.c: 155:             TXREG = 12;
+[e = _TXREG -> -> 12 `i `uc ]
+"156
+[; ;Lab10.c: 156:             while(punt3 > 0){
 [e $U 162  ]
 [e :U 163 ]
 {
-"153
-[; ;Lab10.c: 153:                 punt3 = punt3-1;
+"157
+[; ;Lab10.c: 157:                 punt3 = punt3-1;
 [e = _punt3 -> - -> _punt3 `i -> 1 `i `uc ]
-"154
-[; ;Lab10.c: 154:                 TXREG = puertoB[punt3];
+"158
+[; ;Lab10.c: 158:                 TXREG = puertoB[punt3];
 [e = _TXREG -> *U + &U _puertoB * -> _punt3 `ux -> -> # *U &U _puertoB `ui `ux `uc ]
-"155
-[; ;Lab10.c: 155:                 _delay((unsigned long)((1)*(1000000/4000.0)));
+"159
+[; ;Lab10.c: 159:                 _delay((unsigned long)((1)*(1000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1 `i `d / -> -> 1000000 `l `d .4000.0 `ul ]
-"156
-[; ;Lab10.c: 156:                 }
+"160
+[; ;Lab10.c: 160:                 }
 }
 [e :U 162 ]
-"152
-[; ;Lab10.c: 152:             while(punt3 > 0){
+"156
+[; ;Lab10.c: 156:             while(punt3 > 0){
 [e $ > -> _punt3 `i -> 0 `i 163  ]
 [e :U 164 ]
-"157
-[; ;Lab10.c: 157:             TXREG = 0x0D;
+"161
+[; ;Lab10.c: 161:             TXREG = 0x0D;
 [e = _TXREG -> -> 13 `i `uc ]
-"158
-[; ;Lab10.c: 158:             while(RCREG != 0){
+"162
+[; ;Lab10.c: 162:             RCREG = 0x01;
+[e = _RCREG -> -> 1 `i `uc ]
+"163
+[; ;Lab10.c: 163:             while(RCREG != 0){
 [e $U 165  ]
 [e :U 166 ]
 {
-"159
-[; ;Lab10.c: 159:                 if(RCREG != 51){
-[e $ ! != -> _RCREG `i -> 51 `i 168  ]
-{
-"160
-[; ;Lab10.c: 160:                     TXREG = RCREG;
-[e = _TXREG _RCREG ]
-"161
-[; ;Lab10.c: 161:                     PORTB = RCREG;
-[e = _PORTB _RCREG ]
-"162
-[; ;Lab10.c: 162:                     _delay((unsigned long)((1500)*(1000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1500 `i `d / -> -> 1000000 `l `d .4000.0 `ul ]
-"163
-[; ;Lab10.c: 163:                     RCREG = 0;
-[e = _RCREG -> -> 0 `i `uc ]
 "164
-[; ;Lab10.c: 164:                     }
+[; ;Lab10.c: 164:                 if(RCREG != 1){
+[e $ ! != -> _RCREG `i -> 1 `i 168  ]
+{
+"165
+[; ;Lab10.c: 165:                     TXREG = RCREG;
+[e = _TXREG _RCREG ]
+"166
+[; ;Lab10.c: 166:                     PORTB = RCREG;
+[e = _PORTB _RCREG ]
+"167
+[; ;Lab10.c: 167:                     _delay((unsigned long)((1500)*(1000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1500 `i `d / -> -> 1000000 `l `d .4000.0 `ul ]
+"168
+[; ;Lab10.c: 168:                     RCREG = 0;
+[e = _RCREG -> -> 0 `i `uc ]
+"169
+[; ;Lab10.c: 169:                     }
 }
 [e :U 168 ]
-"165
-[; ;Lab10.c: 165:                 }
+"170
+[; ;Lab10.c: 170:                 }
 }
 [e :U 165 ]
-"158
-[; ;Lab10.c: 158:             while(RCREG != 0){
+"163
+[; ;Lab10.c: 163:             while(RCREG != 0){
 [e $ != -> _RCREG `i -> 0 `i 166  ]
 [e :U 167 ]
-"166
-[; ;Lab10.c: 166:             caso = 1;
+"171
+[; ;Lab10.c: 171:             caso = 1;
 [e = _caso -> -> 1 `i `uc ]
-"167
-[; ;Lab10.c: 167:             punt3 = 32;
+"172
+[; ;Lab10.c: 172:             punt3 = 32;
 [e = _punt3 -> -> 32 `i `uc ]
-"168
-[; ;Lab10.c: 168:         }
+"173
+[; ;Lab10.c: 173:         }
 }
 [e :U 161 ]
-"169
-[; ;Lab10.c: 169:     }
+"174
+[; ;Lab10.c: 174:     }
 }
 [e :U 148 ]
-"170
-[; ;Lab10.c: 170:     return;
+"175
+[; ;Lab10.c: 175:     return;
 [e $UE 147  ]
-"171
-[; ;Lab10.c: 171: }
+"176
+[; ;Lab10.c: 176: }
 [e :UE 147 ]
 }
-"176
-[; ;Lab10.c: 176: void setup() {
+"181
+[; ;Lab10.c: 181: void setup() {
 [v _setup `(v ~T0 @X0 1 ef ]
 {
 [e :U _setup ]
 [f ]
-"177
-[; ;Lab10.c: 177:     config_io();
-[e ( _config_io ..  ]
-"178
-[; ;Lab10.c: 178:     config_reloj();
-[e ( _config_reloj ..  ]
-"179
-[; ;Lab10.c: 179:     config_serial();
-[e ( _config_serial ..  ]
-"180
-[; ;Lab10.c: 180:     config_int_enable();
-[e ( _config_int_enable ..  ]
-"181
-[; ;Lab10.c: 181:     return;
-[e $UE 169  ]
 "182
-[; ;Lab10.c: 182: }
+[; ;Lab10.c: 182:     config_io();
+[e ( _config_io ..  ]
+"183
+[; ;Lab10.c: 183:     config_reloj();
+[e ( _config_reloj ..  ]
+"184
+[; ;Lab10.c: 184:     config_serial();
+[e ( _config_serial ..  ]
+"185
+[; ;Lab10.c: 185:     config_int_enable();
+[e ( _config_int_enable ..  ]
+"186
+[; ;Lab10.c: 186:     return;
+[e $UE 169  ]
+"187
+[; ;Lab10.c: 187: }
 [e :UE 169 ]
 }
-"184
-[; ;Lab10.c: 184: void config_io() {
+"189
+[; ;Lab10.c: 189: void config_io() {
 [v _config_io `(v ~T0 @X0 1 ef ]
 {
 [e :U _config_io ]
 [f ]
-"185
-[; ;Lab10.c: 185:     ANSELH = 0x00;
+"190
+[; ;Lab10.c: 190:     ANSELH = 0x00;
 [e = _ANSELH -> -> 0 `i `uc ]
-"186
-[; ;Lab10.c: 186:     ANSEL = 0x00;
-[e = _ANSEL -> -> 0 `i `uc ]
-"188
-[; ;Lab10.c: 188:     TRISA = 0x00;
-[e = _TRISA -> -> 0 `i `uc ]
-"189
-[; ;Lab10.c: 189:     TRISB = 0x00;
-[e = _TRISB -> -> 0 `i `uc ]
 "191
-[; ;Lab10.c: 191:     PORTA = 0x00;
-[e = _PORTA -> -> 0 `i `uc ]
-"192
-[; ;Lab10.c: 192:     PORTB = 0x00;
-[e = _PORTB -> -> 0 `i `uc ]
+[; ;Lab10.c: 191:     ANSEL = 0x00;
+[e = _ANSEL -> -> 0 `i `uc ]
 "193
-[; ;Lab10.c: 193: }
+[; ;Lab10.c: 193:     TRISA = 0x00;
+[e = _TRISA -> -> 0 `i `uc ]
+"194
+[; ;Lab10.c: 194:     TRISB = 0x00;
+[e = _TRISB -> -> 0 `i `uc ]
+"196
+[; ;Lab10.c: 196:     PORTA = 0x00;
+[e = _PORTA -> -> 0 `i `uc ]
+"197
+[; ;Lab10.c: 197:     PORTB = 0x00;
+[e = _PORTB -> -> 0 `i `uc ]
+"198
+[; ;Lab10.c: 198: }
 [e :UE 170 ]
 }
-"195
-[; ;Lab10.c: 195: void config_reloj() {
+"200
+[; ;Lab10.c: 200: void config_reloj() {
 [v _config_reloj `(v ~T0 @X0 1 ef ]
 {
 [e :U _config_reloj ]
 [f ]
-"196
-[; ;Lab10.c: 196:     OSCCONbits.IRCF2 = 1;
+"201
+[; ;Lab10.c: 201:     OSCCONbits.IRCF2 = 1;
 [e = . . _OSCCONbits 1 3 -> -> 1 `i `uc ]
-"197
-[; ;Lab10.c: 197:     OSCCONbits.IRCF1 = 0;
+"202
+[; ;Lab10.c: 202:     OSCCONbits.IRCF1 = 0;
 [e = . . _OSCCONbits 1 2 -> -> 0 `i `uc ]
-"198
-[; ;Lab10.c: 198:     OSCCONbits.IRCF0 = 0;
+"203
+[; ;Lab10.c: 203:     OSCCONbits.IRCF0 = 0;
 [e = . . _OSCCONbits 1 1 -> -> 0 `i `uc ]
-"199
-[; ;Lab10.c: 199:     OSCCONbits.SCS = 1;
+"204
+[; ;Lab10.c: 204:     OSCCONbits.SCS = 1;
 [e = . . _OSCCONbits 0 0 -> -> 1 `i `uc ]
-"200
-[; ;Lab10.c: 200: }
+"205
+[; ;Lab10.c: 205: }
 [e :UE 171 ]
 }
-"202
-[; ;Lab10.c: 202: void config_serial() {
+"207
+[; ;Lab10.c: 207: void config_serial() {
 [v _config_serial `(v ~T0 @X0 1 ef ]
 {
 [e :U _config_serial ]
 [f ]
-"203
-[; ;Lab10.c: 203:     TXSTAbits.SYNC = 0;
-[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
-"204
-[; ;Lab10.c: 204:     TXSTAbits.BRGH = 1;
-[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
-"206
-[; ;Lab10.c: 206:     BAUDCTLbits.BRG16 = 1;
-[e = . . _BAUDCTLbits 0 3 -> -> 1 `i `uc ]
 "208
-[; ;Lab10.c: 208:     SPBRG = 25;
-[e = _SPBRG -> -> 25 `i `uc ]
+[; ;Lab10.c: 208:     TXSTAbits.SYNC = 0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
 "209
-[; ;Lab10.c: 209:     SPBRGH = 0;
-[e = _SPBRGH -> -> 0 `i `uc ]
+[; ;Lab10.c: 209:     TXSTAbits.BRGH = 1;
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
 "211
-[; ;Lab10.c: 211:     RCSTAbits.SPEN = 1;
-[e = . . _RCSTAbits 0 7 -> -> 1 `i `uc ]
-"212
-[; ;Lab10.c: 212:     RCSTAbits.RX9 = 0;
-[e = . . _RCSTAbits 0 6 -> -> 0 `i `uc ]
+[; ;Lab10.c: 211:     BAUDCTLbits.BRG16 = 1;
+[e = . . _BAUDCTLbits 0 3 -> -> 1 `i `uc ]
 "213
-[; ;Lab10.c: 213:     RCSTAbits.CREN = 1;
-[e = . . _RCSTAbits 0 4 -> -> 1 `i `uc ]
-"215
-[; ;Lab10.c: 215:     TXSTAbits.TXEN = 1;
-[e = . . _TXSTAbits 0 5 -> -> 1 `i `uc ]
+[; ;Lab10.c: 213:     SPBRG = 25;
+[e = _SPBRG -> -> 25 `i `uc ]
+"214
+[; ;Lab10.c: 214:     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
 "216
-[; ;Lab10.c: 216: }
+[; ;Lab10.c: 216:     RCSTAbits.SPEN = 1;
+[e = . . _RCSTAbits 0 7 -> -> 1 `i `uc ]
+"217
+[; ;Lab10.c: 217:     RCSTAbits.RX9 = 0;
+[e = . . _RCSTAbits 0 6 -> -> 0 `i `uc ]
+"218
+[; ;Lab10.c: 218:     RCSTAbits.CREN = 1;
+[e = . . _RCSTAbits 0 4 -> -> 1 `i `uc ]
+"220
+[; ;Lab10.c: 220:     TXSTAbits.TXEN = 1;
+[e = . . _TXSTAbits 0 5 -> -> 1 `i `uc ]
+"221
+[; ;Lab10.c: 221: }
 [e :UE 172 ]
 }
-"218
-[; ;Lab10.c: 218: void config_int_enable() {
+"223
+[; ;Lab10.c: 223: void config_int_enable() {
 [v _config_int_enable `(v ~T0 @X0 1 ef ]
 {
 [e :U _config_int_enable ]
 [f ]
-"219
-[; ;Lab10.c: 219:     INTCONbits.GIE = 1;
+"224
+[; ;Lab10.c: 224:     INTCONbits.GIE = 1;
 [e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
-"220
-[; ;Lab10.c: 220:     INTCONbits.PEIE = 1;
+"225
+[; ;Lab10.c: 225:     INTCONbits.PEIE = 1;
 [e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
-"221
-[; ;Lab10.c: 221:     PIE1bits.RCIE = 1;
+"226
+[; ;Lab10.c: 226:     PIE1bits.RCIE = 1;
 [e = . . _PIE1bits 0 5 -> -> 1 `i `uc ]
-"222
-[; ;Lab10.c: 222:     PIR1bits.RCIF = 0;
+"227
+[; ;Lab10.c: 227:     PIR1bits.RCIF = 0;
 [e = . . _PIR1bits 0 5 -> -> 0 `i `uc ]
-"223
-[; ;Lab10.c: 223: }
+"228
+[; ;Lab10.c: 228: }
 [e :UE 173 ]
 }

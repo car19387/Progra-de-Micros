@@ -15,15 +15,15 @@
 [v _main main `(v  1 e 1 0 ]
 "117
 [v _isr isr `II(v  1 e 1 0 ]
-"176
+"181
 [v _setup setup `(v  1 e 1 0 ]
-"184
+"189
 [v _config_io config_io `(v  1 e 1 0 ]
-"195
+"200
 [v _config_reloj config_reloj `(v  1 e 1 0 ]
-"202
+"207
 [v _config_serial config_serial `(v  1 e 1 0 ]
-"218
+"223
 [v _config_int_enable config_int_enable `(v  1 e 1 0 ]
 "166 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f887.h
 [v _PORTA PORTA `VEuc  1 e 1 @5 ]
@@ -174,33 +174,33 @@
 {
 "112
 } 0
-"176
+"181
 [v _setup setup `(v  1 e 1 0 ]
 {
-"182
+"187
 } 0
-"202
+"207
 [v _config_serial config_serial `(v  1 e 1 0 ]
 {
-"216
+"221
 } 0
-"195
+"200
 [v _config_reloj config_reloj `(v  1 e 1 0 ]
 {
-"200
+"205
 } 0
-"184
+"189
 [v _config_io config_io `(v  1 e 1 0 ]
 {
-"193
+"198
 } 0
-"218
+"223
 [v _config_int_enable config_int_enable `(v  1 e 1 0 ]
 {
-"223
+"228
 } 0
 "117
 [v _isr isr `II(v  1 e 1 0 ]
 {
-"171
+"176
 } 0

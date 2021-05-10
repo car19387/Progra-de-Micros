@@ -2579,9 +2579,10 @@ void main(void) {
 
 void __attribute__((picinterrupt(("")))) isr(void) {
     if (PIR1bits.RCIF) {
-        TXREG = 12;
+
 
         if (RCREG == 49){
+            TXREG = 12;
             while(punt1 > 0){
                 punt1 = punt1-1;
                 TXREG = cadena[punt1];
@@ -2593,18 +2594,20 @@ void __attribute__((picinterrupt(("")))) isr(void) {
         }
 
         if (RCREG == 50){
+            TXREG = 12;
             while(punt2 > 0){
                 punt2 = punt2-1;
                 TXREG = puertoA[punt2];
                 _delay((unsigned long)((1)*(1000000/4000.0)));
             }
             TXREG = 0x0D;
+            RCREG = 0x01;
             while(RCREG != 0){
-                if(RCREG != 50){
-                TXREG = RCREG;
-                PORTA = RCREG;
-                _delay((unsigned long)((1500)*(1000000/4000.0)));
-                RCREG = 0;
+                if(RCREG != 1){
+                    TXREG = RCREG;
+                    PORTA = RCREG;
+                    _delay((unsigned long)((1500)*(1000000/4000.0)));
+                    RCREG = 0;
                 }
             }
             caso = 1;
@@ -2612,14 +2615,16 @@ void __attribute__((picinterrupt(("")))) isr(void) {
         }
 
         if (RCREG == 51){
+            TXREG = 12;
             while(punt3 > 0){
                 punt3 = punt3-1;
                 TXREG = puertoB[punt3];
                 _delay((unsigned long)((1)*(1000000/4000.0)));
                 }
             TXREG = 0x0D;
+            RCREG = 0x01;
             while(RCREG != 0){
-                if(RCREG != 51){
+                if(RCREG != 1){
                     TXREG = RCREG;
                     PORTB = RCREG;
                     _delay((unsigned long)((1500)*(1000000/4000.0)));
